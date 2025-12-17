@@ -1,0 +1,23 @@
+/* =====ABOUT PAGE===== */
+.about-page {
+    padding: 60px 0;
+}
+
+.about-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* breadcrumb */
+.about-breadcrumb {
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+/* title */
+.about-header h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}

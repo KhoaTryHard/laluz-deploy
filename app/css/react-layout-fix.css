@@ -1,0 +1,2253 @@
+/* ===============================
+   PRODUCT SLIDER – LALUZ CLONE
+   =============================== */
+
+.prods-home {
+    padding: 70px 0;
+}
+
+.prods-home .tt-sec {
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+/* Card */
+.prods-home .prod-it {
+    height: 520px;
+    border-radius: 18px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.prods-home .prod-it:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* Inner */
+.prods-home .prod-it .inner {
+    height: 100%;
+    padding: 28px 22px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Image box */
+.prods-home .img-prod {
+    position: relative;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Image */
+.prods-home .img-prod img {
+    object-fit: contain;
+    transition: transform 0.35s ease;
+}
+
+.prods-home .prod-it:hover .img-prod img {
+    transform: scale(1.06);
+}
+
+/* Info */
+.prods-home .wr-info {
+    text-align: center;
+}
+
+.prods-home .txt-prod.tt {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #9b7a5a;
+    margin-bottom: 6px;
+}
+
+.prods-home .divider {
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #cbb59d;
+    margin: 6px auto 10px;
+}
+
+.prods-home .txt-prod.stt {
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.prods-home .txt-prod.prc {
+    font-size: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Swiper */
+.prods-home .swiper {
+    padding-bottom: 45px;
+}
+
+/* Pagination */
+.prods-home .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background: #ddd;
+    opacity: 1;
+}
+
+.prods-home .swiper-pagination-bullet-active {
+    background: #9b7a5a;
+}
+
+/* Arrows */
+.prods-home .swiper-button-prev,
+.prods-home .swiper-button-next {
+    color: #9b7a5a;
+    width: 36px;
+    height: 36px;
+}
+
+.prods-home .swiper-button-prev::after,
+.prods-home .swiper-button-next::after {
+    font-size: 18px;
+}
+
+/* ===============================
+   ProductSlider (LALUZ) - FIX CHUẨN
+   (dùng cho section .prods-home)
+   =============================== */
+
+.prods-home {
+    padding: 70px 0;
+}
+
+.prods-home .tt-sec {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0.06em;
+    margin-bottom: 40px;
+}
+
+/* Card */
+.prods-home .prod-it {
+    height: 100%;
+}
+
+.prods-home .prod-it .inner {
+    height: 520px;
+    /* chiều cao card giống mẫu */
+    border: 1px solid #eee;
+    border-radius: 22px;
+    background: #fff;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Khung ảnh (QUAN TRỌNG cho next/image fill) */
+.prods-home .prod-it .img-prod {
+    position: relative;
+    /* BẮT BUỘC khi dùng <Image fill/> */
+    width: 100%;
+    height: 260px;
+    /* vùng ảnh lớn như mẫu */
+    padding: 40px 25px 0;
+    /* đẩy chai xuống giữa */
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Info */
+.prods-home .wr-info {
+    padding: 0 24px 24px;
+    text-align: center;
+    margin-top: auto;
+    /* kéo info xuống đáy card */
+}
+
+.prods-home .txt-prod.tt {
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9b7a5a;
+    margin: 0 0 8px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.prods-home .txt-prod.tt::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #9b7a5a;
+    margin: 10px auto 0;
+}
+
+.prods-home .txt-prod.stt {
+    display: block;
+    font-size: 16px;
+    color: #2b2b2b;
+    margin: 14px 0 14px;
+}
+
+.prods-home .txt-prod.prc {
+    font-size: 16px;
+    color: #3a3a3a;
+    font-weight: 500;
+}
+
+/* Swiper spacing + không bị “cắt” card */
+.prods-home .swiper {
+    padding: 10px 0 45px;
+}
+
+/* ================================
+   FIX PRODUCT SLIDER – LALUZ CLONE
+   ================================ */
+
+
+/* 2. Card sản phẩm */
+.prods-home .prod-it {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100%;
+    border-radius: 22px;
+    border: 1px solid #E2E2E2;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* 3. Inner layout */
+.prods-home .prod-it .inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+
+/* 4. Khung ảnh – QUAN TRỌNG NHẤT */
+.prods-home .prod-it .img-prod {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    /* giống web mẫu */
+    padding-top: 0 !important;
+    /* TẮT padding-top 100% */
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+/* 5. Ảnh sản phẩm */
+.prods-home .prod-it .img-prod img {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+
+    transform: none !important;
+    /* TẮT translate(-50%) */
+}
+
+/* 6. Info */
+.prods-home .wr-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    text-align: center;
+}
+
+/* Brand */
+.prods-home .txt-prod.tt {
+    font-size: 14px;
+    font-weight: 700;
+    color: #9C8679;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+/* Name */
+.prods-home .txt-prod.stt {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 10px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Price */
+.prods-home .txt-prod.prc {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+}
+
+/* 7. Pagination */
+.prods-home .swiper-pagination {
+    margin-top: 24px;
+}
+
+@media (max-width: 1024px) {
+    .prods-home .prod-it {
+        border-radius: 18px;
+    }
+
+    .prods-home .prod-it .inner {
+        padding: 16px;
+    }
+
+    .prods-home .prod-it .img-prod {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .prods-home .prod-it .img-prod {
+        height: 160px;
+    }
+
+    .prods-home .txt-prod.stt {
+        font-size: 13px;
+    }
+}
+
+/* FIX container chuẩn Laluz */
+.about-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ===========================
+   ABOUT LALUZ – REACT FIX
+   =========================== */
+
+.about-page {
+    padding: 60px 0;
+}
+
+.about-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.about-header {
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.about-content .founder {
+    font-weight: 600;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-header h1 {
+        font-size: 28px;
+    }
+}
+
+/* ===============================
+   FIX ABOUT LALUZ LAYOUT (FINAL)
+   =============================== */
+
+/* Section tổng */
+.about-page {
+    padding: 40px 0;
+}
+
+/* Container */
+.about-page .container {
+    max-width: 860px;
+    /* giống web mẫu */
+    margin: 0 auto;
+}
+
+/* Nội dung */
+.about-content {
+    display: block !important;
+    /* ❌ xoá grid */
+}
+
+/* Text */
+.about-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+/* Dòng CEO */
+.about-content .founder {
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+/* Ảnh */
+.about-image {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* ===== HEADER SCROLL SHOW ONLY MENU ===== */
+
+:root {
+    --header-height: 160px;
+    --header-height-scroll: 56px;
+}
+
+/* header base */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+/* mặc định */
+/* main luôn cách header đúng bằng chiều cao header thật */
+main {
+
+    transition: padding-top 0.25s ease;
+}
+
+
+/* smooth cho các khối */
+.hd-up,
+.hd-mid {
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        height 0.25s ease;
+}
+
+
+/* ẨN HEADER TOP */
+/* ẨN HEADER TOP – FORCE */
+body.header-scroll .header .hd-up {
+    opacity: 0 !important;
+    transform: translateY(-100%) !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+}
+
+
+/* ẨN HEADER MID */
+/* ẨN HEADER MID – FORCE */
+body.header-scroll .header .hd-mid {
+    opacity: 0 !important;
+    transform: translateY(-100%) !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+}
+
+
+/* GIỮ HEADER BOTTOM */
+.hd-down {
+    height: var(--header-height-scroll);
+    display: flex;
+    align-items: center;
+}
+
+/* FIX header-inner khi scroll */
+body.header-scroll .header .header-inner {
+    height: var(--header-height-scroll);
+}
+
+/* ===== FORCE HEADER COLLAPSE WHEN SCROLL ===== */
+
+/* Ép header chỉ cao bằng menu */
+body.header-scroll header.header {
+    height: var(--header-height-scroll) !important;
+    max-height: var(--header-height-scroll) !important;
+    overflow: hidden !important;
+}
+
+/* Ép inner không giữ chiều cao cũ */
+body.header-scroll header.header .header-inner {
+    height: var(--header-height-scroll) !important;
+    max-height: var(--header-height-scroll) !important;
+}
+
+/* ===== FIX HEADER HEIGHT WHEN NOT SCROLL ===== */
+
+/* Header chỉ cao đúng bằng nội dung */
+header.header {
+    height: auto !important;
+    min-height: unset !important;
+}
+
+/* Header inner không giữ chiều cao cứng */
+header.header .header-inner {
+    height: auto !important;
+    min-height: unset !important;
+}
+
+/* Breadcrumb – GIỐNG WEB MẪU LALUZ */
+.nav-bread {
+    margin-top: 24px;
+    /* khoảng cách đúng mẫu */
+    padding-top: 0;
+}
+
+
+/* ==============================
+   CATEGORY PAGE – LALUZ CHUẨN
+   Chỉ áp cho /collections/*
+   ============================== */
+
+.page-category {
+    padding-top: 30px;
+}
+
+/* ----- Layout 2 cột ----- */
+.page-category .container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.page-category .row {
+    display: flex;
+    gap: 32px;
+}
+
+/* Sidebar */
+.page-category .col-3 {
+    flex: 0 0 260px;
+}
+
+/* Content */
+.page-category .col-9 {
+    flex: 1;
+}
+
+/* ----- Toolbar ----- */
+.page-category .prod-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.page-category .prod-toolbar h1,
+.page-category .prod-toolbar h2 {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* ----- GRID 5 SP / HÀNG ----- */
+.page-category .prod-flex {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+/* ----- CARD ----- */
+.page-category .prod-col {
+    width: 100%;
+}
+
+.page-category .prod-it {
+    background: transparent;
+    border-radius: 0;
+}
+
+.page-category .prod-it .inner {
+    padding: 0;
+    align-items: stretch;
+}
+
+/* ----- IMAGE ----- */
+.page-category .img-prod {
+    width: 100%;
+    height: 240px;
+    background: #f6f6f6;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-category .img-prod img {
+    object-fit: contain !important;
+}
+
+/* ----- INFO ----- */
+.page-category .wr-info {
+    margin-top: 12px;
+    text-align: left;
+}
+
+.page-category .txt-prod.tt {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #9b7a5a;
+}
+
+.page-category .txt-prod.stt {
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 6px 0;
+    min-height: 44px;
+}
+
+.page-category .txt-prod.prc {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 1200px) {
+    .page-category .prod-flex {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .page-category .prod-flex {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .page-category .row {
+        flex-direction: column;
+    }
+
+    .page-category .col-3 {
+        width: 100%;
+    }
+
+    .page-category .prod-flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ======================================================
+   CATEGORY PAGE – FIX CHUẨN LALUZ
+   Scope: .page-category
+   ====================================================== */
+
+.page-category {
+    padding: 24px 0 80px;
+}
+
+/* ===== Layout 2 cột ===== */
+.page-category .container {
+    max-width: 1280px;
+}
+
+.page-category .row {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.page-category .col.col-3 {
+    flex: 0 0 260px;
+    max-width: 260px;
+}
+
+.page-category .col.col-9 {
+    flex: 1;
+}
+
+/* ===== Toolbar ===== */
+.page-category .prod-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.page-category .prod-toolbar h1,
+.page-category .prod-toolbar h2 {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* ===== GRID: 5 SP / HÀNG (DESKTOP) ===== */
+.page-category .prod-flex {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+/* reset flex cũ */
+.page-category .prod-col {
+    width: auto !important;
+}
+
+/* ===== CARD ===== */
+.page-category .prod-it {
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    height: auto !important;
+}
+
+.page-category .prod-it .inner {
+    padding: 0 !important;
+    display: block !important;
+}
+
+/* ===== IMAGE ===== */
+.page-category .img-prod {
+    width: 100%;
+    height: 240px;
+    background: #f6f6f6;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-category .img-prod img {
+    object-fit: contain !important;
+}
+
+/* ===== INFO ===== */
+.page-category .wr-info {
+    margin-top: 12px;
+    text-align: left;
+}
+
+.page-category .txt-prod.tt {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #9b7a5a;
+    margin-bottom: 6px;
+}
+
+.page-category .txt-prod.stt {
+    font-size: 15px;
+    line-height: 1.45;
+    min-height: 44px;
+    margin-bottom: 8px;
+}
+
+.page-category .txt-prod.prc {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+    .page-category .prod-flex {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .page-category .prod-flex {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .page-category .row {
+        flex-direction: column;
+    }
+
+    .page-category .col.col-3 {
+        max-width: 100%;
+    }
+
+    .page-category .prod-flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== FIX CUỐI: BỎ PADDING + WIDTH SAI CỦA CARD ===== */
+.page-category .prod-col {
+    display: block !important;
+}
+
+.page-category .prod-it {
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* ===== CATEGORY: IMAGE PHỦ KÍN KHUNG (GIỐNG LALUZ) ===== */
+.page-category .img-prod {
+    height: 260px;
+    /* bạn có thể tăng 260 nếu muốn giống hơn */
+    background: #f6f6f6;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Next/Image render <img> bên trong wrapper -> ép cover */
+.page-category .img-prod img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    /* ✅ phủ kín khung */
+    object-position: center !important;
+}
+
+.page-category .img-prod :is(img, picture img) {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+/* =====================================================
+   CATEGORY PAGE – FIX CHUẨN 100% THEO LALUZ
+   Scope: CHỈ /collections/*
+   ===================================================== */
+
+.page-category {
+    padding: 24px 0 80px;
+}
+
+/* ===== Layout ===== */
+.page-category .container {
+    max-width: 1280px;
+}
+
+.page-category .row {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.page-category .col.col-3 {
+    flex: 0 0 260px;
+    max-width: 260px;
+}
+
+.page-category .col.col-9 {
+    flex: 1;
+}
+
+/* ===== GRID 5 SP / HÀNG ===== */
+.page-category .prod-flex {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+/* reset width cũ */
+.page-category .prod-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+}
+
+/* ===== CARD RESET ===== */
+.page-category .prod-it {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.page-category .prod-it .inner {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+/* ===== IMAGE BOX ===== */
+.page-category .img-prod {
+    width: 100%;
+    height: 260px;
+    background: #f6f6f6;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+
+    /* ❌ kill slider styles */
+    padding: 0 !important;
+    display: block !important;
+}
+
+/* ===== IMAGE – FIX QUAN TRỌNG NHẤT ===== */
+.page-category .img-prod img,
+.page-category .img-prod picture img {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    /* ✅ phủ kín khung */
+    object-position: center !important;
+
+    transform: none !important;
+}
+
+/* ===== INFO ===== */
+.page-category .wr-info {
+    margin-top: 12px;
+    text-align: left;
+}
+
+.page-category .txt-prod.tt {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #9b7a5a;
+    margin-bottom: 6px;
+}
+
+.page-category .txt-prod.stt {
+    font-size: 15px;
+    line-height: 1.45;
+    min-height: 44px;
+    margin-bottom: 8px;
+}
+
+.page-category .txt-prod.prc {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+    .page-category .prod-flex {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .page-category .prod-flex {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .page-category .row {
+        flex-direction: column;
+    }
+
+    .page-category .col.col-3 {
+        max-width: 100%;
+    }
+
+    .page-category .prod-flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =====================================================
+   FIX HOVER ZOOM – MATCH DOM THỰC TẾ
+   ===================================================== */
+
+/* Card */
+.page-category .prod-it {
+    transition: box-shadow 0.35s ease;
+}
+
+/* Image wrapper */
+.page-category .img-prod {
+    overflow: hidden;
+}
+
+/* Link bao ảnh */
+.page-category .img-prod {
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+/* ===== HOVER ===== */
+.page-category .prod-it:hover .img-prod {
+    transform: scale(1.1);
+}
+
+/* Card nổi nhẹ */
+.page-category .prod-it:hover {
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================================
+   FIX HEADER OVERLAP – ONLY COLLECTION PAGE
+   ========================================================= */
+
+.page-category {
+    padding-top: 160px;
+    /* đúng với chiều cao header */
+}
+
+.page-category .breadcrumb-sec {
+    margin-bottom: 30px;
+}
+
+/* chỉ áp dụng trang collections (page-category) */
+.page-category {
+    padding-top: var(--header-current-height, 140px);
+}
+
+/* ===============================
+   PRODUCT PAGE LAYOUT – FIX
+   =============================== */
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .prod-wrap {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .prod-sidebar {
+        width: 260px;
+        flex-shrink: 0;
+    }
+
+    .prod-main {
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1024px) {
+    .prod-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prod-sidebar {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .prod-main {
+        width: 100%;
+    }
+}
+
+/* Filter wrapper */
+.prod-sidebar {
+    position: relative;
+}
+
+/* Box filter */
+.filter-prod {
+    border: 1px solid #eee;
+    padding: 18px 16px;
+}
+
+
+/* Mỗi block filter */
+.filter-box {
+    margin-bottom: 28px;
+}
+
+/* Title */
+.tt-filter {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Scroll list (GIỐNG MẪU) */
+.filter-scroll {
+    max-height: 220px;
+    /* web mẫu ~200–240px */
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+/* Scrollbar giống mẫu */
+.filter-scroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.filter-scroll::-webkit-scrollbar-thumb {
+    background: #c4a484;
+    border-radius: 4px;
+}
+
+.filter-prod {
+    padding-right: 24px;
+}
+
+.filter-scroll {
+    max-height: 240px;
+    /* 👈 giống web mẫu */
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.filter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-list li {
+    margin-bottom: 10px;
+}
+
+.filter-list label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.filter-scroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.filter-scroll::-webkit-scrollbar-thumb {
+    background: #cfcfcf;
+    border-radius: 4px;
+}
+
+.filter-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* FIX header overlay (WP → Next) */
+.page-category {
+    padding-top: 120px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .page-category {
+        padding-top: 90px;
+    }
+}
+
+
+/* ===== PRODUCT GRID – 5 COLUMNS ===== */
+
+.list-prod {
+    width: 100%;
+}
+
+.prod-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.prod-col {
+    width: 20%;
+    /* ✅ 5 sản phẩm / hàng */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 32px;
+}
+
+/* Laptop nhỏ / tablet ngang */
+@media (max-width: 1399px) {
+    .prod-col {
+        width: 25%;
+        /* 4 cột */
+    }
+}
+
+/* Tablet */
+@media (max-width: 1199px) {
+    .prod-col {
+        width: 33.3333%;
+        /* 3 cột */
+    }
+}
+
+/* Mobile lớn */
+@media (max-width: 991px) {
+    .prod-col {
+        width: 50%;
+        /* 2 cột */
+    }
+}
+
+/* Mobile nhỏ */
+@media (max-width: 575px) {
+    .prod-col {
+        width: 100%;
+        /* 1 cột */
+    }
+}
+
+.prod-it {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.prod-it .inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.prod-col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* ===============================
+   COLLECTION LAYOUT – FIX CHUẨN
+   =============================== */
+
+.wrap-prod {
+    width: 100%;
+}
+
+.wrap-prod .prod-wrap-flex {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 40px;
+    /* khoảng cách giữa filter & grid */
+}
+
+/* ===== SIDEBAR FILTER (CỘT TRÁI) ===== */
+.wrap-prod .prod-left {
+    flex: 0 0 360px;
+    /* ✅ CHỐT độ rộng giống web mẫu */
+    max-width: 360px;
+    width: 360px;
+}
+
+/* ===== GRID (CỘT PHẢI) ===== */
+.wrap-prod .prod-right {
+    flex: 1 1 auto;
+    min-width: 0;
+    /* ⚠️ rất quan trọng để grid không tràn */
+}
+
+@media (max-width: 991px) {
+    .wrap-prod .prod-wrap-flex {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .wrap-prod .prod-left {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 auto;
+    }
+}
+
+/* ===== TOOLBAR ALIGN FIX ===== */
+.prod-op {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* ✅ đẩy "Mới nhất" sang phải */
+    margin-bottom: 30px;
+}
+
+.prod-heading {
+    flex: 1;
+}
+
+.prod-heading-right {
+    flex: 0 0 auto;
+}
+
+.prod-heading-right .box-slt {
+    min-width: 180px;
+}
+
+/* ===== BREADCRUMB FIX ===== */
+.breadcrumb-sec {
+    background: #fff;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.breadcrumb-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.breadcrumb-row a {
+    color: #555;
+    transition: color 0.2s;
+}
+
+.breadcrumb-row a:hover {
+    color: #000;
+}
+
+.breadcrumb-row .active {
+    color: #c79a5b;
+    /* màu nhấn web mẫu */
+    font-weight: 500;
+}
+
+/* ===============================
+   FILTER – FIX CHUẨN LALUZ
+   =============================== */
+
+.filter-prod {
+    border: 1px solid #eee;
+    padding: 18px 16px;
+}
+
+/* block */
+.filter-box {
+    margin-bottom: 28px;
+}
+
+.tt-filter {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* list */
+.filter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-list li {
+    margin-bottom: 10px;
+}
+
+/* item */
+.filter-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* ✅ checkbox sang phải */
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+/* text */
+.filter-text {
+    flex: 1;
+}
+
+/* checkbox ẩn */
+.filter-item input {
+    display: none;
+}
+
+/* box giả */
+.filter-box-ui {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    position: relative;
+}
+
+/* checked */
+.filter-item input:checked+.filter-box-ui {
+    border-color: #c79a5b;
+    background: #c79a5b;
+}
+
+.filter-item input:checked+.filter-box-ui::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* ===== FILTER ITEM – CHECKBOX LEFT / TEXT RIGHT ===== */
+
+.filter-item {
+    display: grid;
+    grid-template-columns: 22px 1fr;
+    /* ✅ cột checkbox cố định */
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Ẩn checkbox gốc */
+.filter-item input {
+    display: none;
+}
+
+/* box checkbox giả */
+.filter-box-ui {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    position: relative;
+}
+
+/* text */
+.filter-text {
+    line-height: 1.4;
+}
+
+/* checked state */
+.filter-item input:checked+.filter-box-ui {
+    border-color: #c79a5b;
+    background: #c79a5b;
+}
+
+.filter-item input:checked+.filter-box-ui::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* ===============================
+   BREADCRUMB SPACING FIX
+   =============================== */
+
+.breadcrumb-sec {
+    margin-bottom: 0 !important;
+    padding-bottom: 10px;
+    /* giữ hơi thoáng */
+}
+
+.wrap-prod {
+    padding-top: 10px;
+    /* kéo nội dung lên */
+}
+
+/* =====================================
+   PRODUCT CARD – FINAL DESIGN
+   ===================================== */
+
+/* CARD */
+.prod-it {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    transition: box-shadow 0.35s ease, transform 0.35s ease;
+    height: 100%;
+}
+
+/* hover nổi nhẹ */
+.prod-it:hover {
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+}
+
+/* IMAGE WRAPPER */
+.prod-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(180deg, #fafafa, #f2f2f2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* IMAGE */
+.prod-img img {
+    max-width: 72%;
+    max-height: 72%;
+    object-fit: contain;
+    transition: transform 0.45s ease;
+}
+
+/* zoom ảnh */
+.prod-it:hover .prod-img img {
+    transform: scale(1.1);
+}
+
+/* INFO */
+.prod-info {
+    padding: 16px 14px 18px;
+    text-align: center;
+}
+
+/* BRAND */
+.prod-brand {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #9a7b4f;
+    /* tone vàng nâu sang */
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+/* NAME */
+.prod-name {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #222;
+    margin-bottom: 10px;
+    min-height: 38px;
+    /* giữ đều chiều cao */
+}
+
+/* PRICE */
+.prod-price {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* GRID FIX */
+.prod-flex {
+    align-items: stretch;
+}
+
+.prod-col {
+    display: flex;
+}
+
+.prod-it {
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.prod-it:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .06);
+}
+
+/* ===============================
+   PRODUCT GRID – SPACING FIX
+   =============================== */
+
+/* giảm padding cột */
+.prod-col {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 20px;
+}
+
+/* giảm negative margin của flex */
+.prod-flex {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+/* ===============================
+   PRODUCT GRID – 5 COLUMNS
+   =============================== */
+
+@media (min-width: 1200px) {
+    .prod-col {
+        width: 20%;
+        /* 5 cột */
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .prod-col {
+        width: 25%;
+    }
+}
+
+@media (max-width: 767px) {
+    .prod-col {
+        width: 50%;
+    }
+}
+
+/* giảm chiều cao khối ảnh */
+.prod-it .inner .bg {
+    height: 58%;
+}
+
+/* ===============================
+   PRODUCT CARD – SIZE BALANCE
+   =============================== */
+
+.prod-it {
+    border-radius: 14px;
+}
+
+.prod-it .inner {
+    padding-bottom: 14px;
+}
+
+.prod-it .inner .wr-info {
+    padding: 14px 10px 0;
+}
+
+.list-prod {
+    margin: 0 -0.6rem;
+}
+
+.list-prod .prod-it {
+    padding: 0 0.6rem;
+}
+
+/* 
+/* ===========================
+   CUSTOM SORT DROPDOWN (LALUZ)
+   =========================== */
+
+.prod-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.prod-heading-right {
+    position: relative;
+}
+
+.box-slt {
+    position: relative;
+    min-width: 160px;
+}
+
+/* Nút hiển thị "Mới nhất" */
+.box-slt .slt-btn {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 12px 0 14px;
+    background: #fff;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+
+.box-slt .slt-text {
+    font-size: 14px;
+    color: #333;
+}
+
+/* mũi tên tam giác */
+.box-slt .slt-ico {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #666;
+}
+
+/* dropdown list */
+.box-slt .slt-drop {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    left: 0;
+
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 2px;
+
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: all 0.18s ease;
+    z-index: 50;
+}
+
+/* mở dropdown */
+.box-slt.is-open .slt-drop {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* item */
+.box-slt .slt-item {
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.box-slt .slt-item:hover {
+    background: #f6f6f6;
+}
+
+.box-slt .slt-item.is-active {
+    color: #c58f5c;
+    font-weight: 500;
+}
+
+/* hover khung giống web mẫu */
+.box-slt .slt-btn:hover {
+    border-color: #c9a46b;
+}
+
+/* ===========================
+   PAGINATION – FIX GIỐNG LALUZ
+   =========================== */
+
+ul.pagination {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 48px 0 32px;
+    padding: 0;
+}
+
+ul.pagination li {
+    list-style: none;
+}
+
+ul.pagination li a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    transition: all .25s ease;
+}
+
+ul.pagination li.active a {
+    background: #8b6f4e;
+    border-color: #8b6f4e;
+    color: #fff;
+    font-weight: 500;
+}
+
+ul.pagination li a:hover {
+    background: #8b6f4e;
+    color: #fff;
+}
+
+/* ===============================
+   PAGINATION – LALUZ STYLE
+   =============================== */
+
+ul.pagination {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 40px 0;
+    padding: 0;
+}
+
+ul.pagination li {
+    list-style: none;
+}
+
+ul.pagination li a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    transition: all 0.25s ease;
+}
+
+ul.pagination li.active a {
+    background: #8b6f4e;
+    border-color: #8b6f4e;
+    color: #fff;
+    font-weight: 500;
+}
+
+ul.pagination li a:hover {
+    background: #8b6f4e;
+    color: #fff;
+}
+
+/* ===============================
+   COLLECTION BANNER
+   =============================== */
+
+.collection-banner {
+    margin: 50px 0 0;
+}
+
+.collection-banner img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+.collection-banner .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+/* ===============================
+   PAGINATION – LALUZ STYLE
+   =============================== */
+
+ul.pagination {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 40px 0;
+    padding: 0;
+}
+
+ul.pagination li {
+    list-style: none;
+}
+
+ul.pagination li a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    transition: all 0.25s ease;
+}
+
+ul.pagination li.active a {
+    background: #8b6f4e;
+    border-color: #8b6f4e;
+    color: #fff;
+    font-weight: 500;
+}
+
+ul.pagination li a:hover {
+    background: #8b6f4e;
+    color: #fff;
+}
+
+/* ===============================
+   COLLECTION BANNER
+   =============================== */
+
+.collection-banner {
+    margin: 50px 0 0;
+}
+
+.collection-banner img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+.collection-banner .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+/* ===== FIX BREADCRUMB GAP (PRODUCT DETAIL) ===== */
+
+/* Giảm khoảng cách breadcrumb so với header */
+.main.spc-hd .nav-bread {
+    margin-top: 0 !important;
+    padding-top: 8px;
+    /* web mẫu rất sát */
+    padding-bottom: 8px;
+}
+
+/* Nếu header có border-bottom thì giữ sát */
+.header+.main.spc-hd .nav-bread {
+    margin-top: 0 !important;
+}
+
+/* ===== FIX QUANTITY LAYOUT (PRODUCT DETAIL) ===== */
+
+
+
+.prod-dt .box-quantity .txt {
+    min-width: 70px;
+    /* web mẫu có độ rộng cố định */
+    font-weight: 500;
+}
+
+.prod-dt .box-quantity .quantity {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 36px;
+    /* QUAN TRỌNG */
+}
+
+.prod-dt .box-quantity .quantity button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.prod-dt .box-quantity .quantity input {
+    width: 46px;
+    height: 36px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ===== FIX 2 IMAGE THUMB BELOW MAIN IMAGE ===== */
+
+.prod-dt-left-bot {
+    margin-top: 16px;
+}
+
+.prod-dt-left-bot .swiper-wrapper {
+    display: flex;
+    gap: 12px;
+}
+
+
+.prod-dt-left-bot img {
+    width: 110px;
+    /* gần giống web mẫu */
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.prod-dt-img {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.prod-dt-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.prod-dt-left-bottom {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.prod-dt-left-bottom-img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.prod-dt-left-bottom-img.is-active {
+    border-color: #a47c4b;
+}
+
+.tt-intro-prod {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* max-width: 100%; */
+}
+
+.hotline {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.prod-dt-left-top-img {
+    width: 100%;
+    height: 390px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.prod-dt-left-top-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ===== FIX RELATED PRODUCT SLIDER ===== */
+
+
+
+.prod-slide .prod-it {
+    height: 100%;
+}
+
+.prod-slide .inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.prod-slide .img-prod {
+    display: block;
+    width: 100%;
+    height: 190px;
+}
+
+.prod-slide .img-prod img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ===== FIX BOX QUANTITY – GIỐNG LALUZ 100% ===== */
+
+.prod-dt .quantity-prod {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.prod-dt .quantity-prod>.txt {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.prod-dt .box-quantity {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 36px;
+}
+
+/* nút + - */
+.prod-dt .box-quantity .minus,
+.prod-dt .box-quantity .plus {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* input thật (bị hide như theme) */
+.prod-dt .box-quantity .ip-value {
+    display: none;
+}
+
+/* số hiển thị */
+.prod-dt .box-quantity .count-number {
+    width: 46px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 0;
+}
+
+.prod-dt .quantity-prod {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.prod-dt .box-quantity {
+    width: 8rem;
+    height: 2.4rem;
+    position: relative;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #BDBDBD;
+    background: #fff;
+}
+
+.prod-dt .box-quantity .minus,
+.prod-dt .box-quantity .plus {
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    height: 100%;
+    font-size: 1.3rem;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.prod-dt .box-quantity .minus {
+    left: 0;
+}
+
+.prod-dt .box-quantity .plus {
+    right: 0;
+}
+
+.prod-dt .box-quantity .count-number {
+    text-align: center;
+    line-height: 2.4rem;
+    font-weight: 500;
+}
+
+.prod-dt .box-quantity .ip-value {
+    display: none;
+}
+
+/* box cha */
+.prod-dt .box-quantity {
+    position: relative;
+    width: 8rem;
+    height: 2.4rem;
+    border: 0.1rem solid #BDBDBD;
+    border-radius: 0.4rem;
+    background: #fff;
+}
+
+/* nút trừ */
+.prod-dt .box-quantity .minus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 100%;
+    font-size: 1.3rem;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* nút cộng */
+.prod-dt .box-quantity .plus {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem;
+    height: 100%;
+    font-size: 1.3rem;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* SỐ LƯỢNG – CĂN GIỮA TUYỆT ĐỐI */
+.prod-dt .box-quantity .count-number {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #414141;
+    pointer-events: none;
+    /* tránh click nhầm */
+}
+
+/* input thật – theme WP luôn hide */
+.prod-dt .box-quantity .ip-value {
+    display: none;
+}
+
+.mona-hidden-tt {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0;
+}
+
+/* HEADER FIXED ĐÚNG CHUẨN WP */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.main.spc-hd {
+    padding-top: var(--header-current-height);
+}

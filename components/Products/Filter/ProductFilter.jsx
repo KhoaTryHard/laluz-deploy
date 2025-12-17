@@ -1,0 +1,72 @@
+"use client";
+
+export default function ProductFilter({
+  brandOptions = [],
+  genderOptions = [],
+  selectedBrands,
+  setSelectedBrands,
+  selectedGenders,
+  setSelectedGenders,
+}) {
+  const toggleSet = (set, value) => {
+    const next = new Set(set);
+    next.has(value) ? next.delete(value) : next.add(value);
+    return next;
+  };
+
+  return (
+    <aside className="filter-prod">
+      {/* ===== BRAND ===== */}
+      <div className="filter-box">
+        <div className="tt-filter">Tìm theo thương hiệu</div>
+
+        <div className="filter-scroll">
+          <ul className="filter-list">
+            {brandOptions.map((b) => (
+              <li key={b}>
+                <label className="filter-item">
+                  <input
+                    type="checkbox"
+                    checked={selectedBrands?.has(b) || false}
+                    onChange={() =>
+                      setSelectedBrands?.(toggleSet(selectedBrands, b))
+                    }
+                  />
+                  <span className="filter-box-ui"></span>
+                  <span className="filter-text">{b}</span>
+
+                  
+                  
+                </label>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* ===== GENDER ===== */}
+      <div className="filter-box">
+        <div className="tt-filter">Giới tính</div>
+
+        <ul className="filter-list">
+          {genderOptions.map((g) => (
+            <li key={g}>
+              <label className="filter-item">
+                <input
+                  type="checkbox"
+                  checked={selectedGenders?.has(g) || false}
+                  onChange={() =>
+                    setSelectedGenders?.(toggleSet(selectedGenders, g))
+                  }
+                />
+
+                <span className="filter-box-ui"></span>
+                <span className="filter-text">{g}</span>
+              </label>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </aside>
+  );
+}

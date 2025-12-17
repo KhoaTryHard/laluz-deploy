@@ -1,0 +1,245 @@
+/* =========================
+   FIX PRODUCT SLIDER – LALUZ STYLE
+   ========================= */
+
+.home-products {
+    padding: 6rem 0;
+}
+
+.home-products .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Title */
+.home-products .tt-sec {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+/* Swiper */
+.prod-slider {
+    padding-bottom: 5rem;
+}
+
+/* Slide */
+.prod-slider .swiper-slide {
+    height: auto;
+}
+
+/* Card */
+.prod-it {
+    background: #fff;
+    border-radius: 2rem;
+    padding: 2.5rem 2rem 3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* IMAGE WRAPPER – QUAN TRỌNG */
+.prod-it .img-prod {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* Next/Image FIX */
+.prod-it .img-prod span {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.prod-it .img-prod img {
+    position: relative !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
+
+/* INFO */
+.prod-it .wr-info {
+    text-align: center;
+}
+
+.prod-it .txt-prod.tt {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    color: #9c8679;
+}
+
+.prod-it .txt-prod.stt {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.prod-it .txt-prod.prc {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #9c8679;
+}
+
+/* NAVIGATION */
+.home-products .swiper-button-next,
+.home-products .swiper-button-prev {
+    color: #c7a17a;
+}
+
+.home-products .swiper-button-next:hover,
+.home-products .swiper-button-prev:hover {
+    color: #000;
+}
+
+/* PAGINATION */
+.home-products .swiper-pagination-bullet {
+    background: #d1d1d1;
+    opacity: 1;
+}
+
+.home-products .swiper-pagination-bullet-active {
+    background: #9c8679;
+}
+
+/* CARD */
+.prod-it {
+    height: 100%;
+}
+
+.prod-it .inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    padding: 24px 20px 28px;
+    background: #fff;
+}
+
+/* ẢNH */
+.img-prod {
+    position: relative;
+    /* CỰC KỲ QUAN TRỌNG */
+    width: 100%;
+    height: 260px;
+    /* CHIỀU CAO CỐ ĐỊNH */
+    margin-bottom: 20px;
+}
+
+/* Next/Image tự fill */
+.img-prod img {
+    object-fit: contain;
+}
+
+/* TEXT */
+.wr-info {
+    text-align: center;
+    margin-top: auto;
+}
+
+.txt-prod.tt {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #a47c4b;
+}
+
+.txt-prod.stt {
+    display: block;
+    font-size: 15px;
+    margin: 8px 0;
+    color: #222;
+}
+
+.txt-prod.prc {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.prods-home .swiper-button-prev,
+.prods-home .swiper-button-next {
+    color: #c59d5f;
+    width: 40px;
+    height: 40px;
+}
+
+.prods-home .swiper-button-prev::after,
+.prods-home .swiper-button-next::after {
+    font-size: 22px;
+}
+
+/* =========================
+   PRODUCT SLIDER – FIX CHUẨN LALUZ
+========================= */
+
+.prods-home .prod-it {
+    height: 520px;
+    /* chiều cao card giống web mẫu */
+    display: flex;
+    flex-direction: column;
+}
+
+.prods-home .prod-it .inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.prods-home .img-prod {
+    position: relative;
+    height: 340px;
+    /* vùng ảnh chiếm ~65% card */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.prods-home .img-prod img {
+    object-fit: cover;
+    /* QUAN TRỌNG */
+}
+
+.prods-home .wr-info {
+    flex: 1;
+    text-align: center;
+    padding: 20px 15px 0;
+}
+
+.prods-home .txt-prod.tt {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.prods-home .txt-prod.stt {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.prods-home .txt-prod.prc {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.prods-home .swiper-slide {
+    height: auto;
+}
+
+.prods-home .swiper {
+    padding-bottom: 40px;
+}
