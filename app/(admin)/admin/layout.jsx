@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect } from "react";
-import "./admin.css"; // CSS admin riêng (tạo ở bước 2)
+import "./admin.css";
+import "./style.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function AdminLayout({ children }) {
   useEffect(() => {
@@ -28,34 +30,77 @@ export default function AdminLayout({ children }) {
 
   return (
     <>
-      {/* HEADER ADMIN */}
-      <header className="admin-header">
+      {/* ===== HEADER ===== */}
+      <header className="header">
         <div className="container">
-          <div className="admin-header-inner">
-            <div className="admin-logo">ADMIN PANEL</div>
-            <div className="btn-ham">
-              <span />
-              <span />
-              <span />
+          <div className="header-inner">
+            <div className="hd-mid">
+              <div className="hd-mid-inner">
+                <div className="logo">
+                  <span className="tt-sec">ADMIN PANEL</span>
+                </div>
+
+                <div className="hd-mid-right">
+                  <div className="hd-mid-right-it">
+                    <div className="btn-ham-wr">
+                      <div className="btn-ham">
+                        <span className="line-ham"></span>
+                        <span className="line-ham"></span>
+                        <span className="line-ham"></span>
+                      </div>
+                    </div>
+                    <a href="/admin/login" className="hd-login">
+                      <div className="ic-login">
+                        <i className="fas fa-user-circle fa-2x"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </header>
 
-      {/* SIDEBAR */}
-      <aside className="menu-mb">
-        <nav>
-          <a href="/admin">Dashboard</a>
-          <a href="/admin/products">Sản phẩm</a>
-          <a href="/admin/orders">Đơn hàng</a>
-          <a href="/admin/users">Người dùng</a>
-        </nav>
-      </aside>
+      {/* ===== SIDEBAR ===== */}
+      <div className="menu-mb">
+        <div className="menu-mb-action">
+          <nav className="nav-menu">
+            <ul className="menu-list flex-col-mn">
+              <li className="menu-item">
+                <a href="/admin" className="menu-link txt-mn">
+                  <i className="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="/admin/products" className="menu-link txt-mn">
+                  <i className="fas fa-box"></i> Quản lý Sản phẩm
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="/admin/orders" className="menu-link txt-mn">
+                  <i className="fas fa-shopping-cart"></i> Quản lý Đơn hàng
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="/admin/users" className="menu-link txt-mn">
+                  <i className="fas fa-users"></i> Quản lý Người dùng
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="/admin/login" className="menu-link txt-mn">
+                  <i className="fas fa-sign-out-alt"></i> Đăng xuất
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
       <div className="overlay"></div>
 
-      {/* MAIN */}
-      <main className="admin-main">{children}</main>
+      {/* ===== MAIN ===== */}
+      <main className="main spc-hd main-default-page">{children}</main>
     </>
   );
 }

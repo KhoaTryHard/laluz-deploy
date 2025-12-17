@@ -19,3 +19,257 @@ body {
 .admin-main {
     padding: 24px;
 }
+
+/* ============================= */
+/* ADMIN PRODUCTS TABLE */
+/* ============================= */
+
+.box-white {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    font-size: 14px;
+}
+
+.admin-table thead {
+    background: #f5f6fa;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.admin-table th {
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+}
+
+.admin-table tbody tr:hover {
+    background: #fafafa;
+}
+
+/* ===== STATUS ===== */
+.status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status.success {
+    background: #e6f7ec;
+    color: #1e8e3e;
+}
+
+.status.danger {
+    background: #fdecea;
+    color: #d93025;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.admin-table td:last-child {
+    white-space: nowrap;
+}
+
+.btn-sm {
+    padding: 6px 14px;
+    font-size: 13px;
+    margin-right: 6px;
+}
+
+.btn-four.btn-sm {
+    background: #ddd;
+    color: #333;
+}
+
+/* ===== HEADER ROW ===== */
+.admin-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .admin-table {
+        font-size: 13px;
+    }
+
+    .btn-sm {
+        margin-bottom: 6px;
+    }
+}
+
+/* ===== ACTION COLUMN FIX ===== */
+
+.admin-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* khoảng cách giữa Sửa - Xóa */
+}
+
+.admin-actions .btn {
+    min-width: 64px;
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+/* Đảm bảo không xuống dòng */
+.admin-table td:last-child {
+    white-space: nowrap;
+}
+
+/* ===== ADMIN FORM ===== */
+
+.admin-form {
+    max-width: 520px;
+    margin-top: 24px;
+}
+
+.admin-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.admin-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.admin-form input,
+.admin-form select {
+    height: 42px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.admin-form input:focus,
+.admin-form select:focus {
+    outline: none;
+    border-color: #b57c57;
+    box-shadow: 0 0 0 2px rgba(181, 124, 87, 0.15);
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.form-actions .btn {
+    min-width: 140px;
+}
+
+/* ======================================
+   ADMIN CREATE PRODUCT – CENTERED FORM
+====================================== */
+
+/* giới hạn chiều rộng, căn giữa */
+.container-laluz {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+}
+
+/* tiêu đề */
+.container-laluz .tt-sec {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+/* form card */
+.admin-form {
+    background: #fff;
+    border-radius: 1.2rem;
+    padding: 3rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+
+    max-width: 640px;
+    margin: 0 auto;
+    /* CĂN GIỮA FORM */
+}
+
+/* mỗi field */
+.admin-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.8rem;
+}
+
+/* label */
+.admin-form label {
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    font-size: 1.4rem;
+}
+
+/* input + select */
+.admin-form input,
+.admin-form select {
+    height: 4.6rem;
+    padding: 0 1.4rem;
+    border-radius: 0.6rem;
+    border: 1px solid #ddd;
+    font-size: 1.4rem;
+    transition: border 0.2s ease;
+}
+
+/* focus */
+.admin-form input:focus,
+.admin-form select:focus {
+    outline: none;
+    border-color: #b37a5c;
+}
+
+/* action buttons */
+.admin-form .form-actions {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 2.5rem;
+}
+
+/* nút */
+.admin-form .btn {
+    min-width: 160px;
+    height: 4.6rem;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .admin-form {
+        padding: 2rem;
+    }
+}
+
+/* error text */
+.form-error {
+    color: #e53935;
+    font-size: 1.3rem;
+    margin-top: 0.4rem;
+}
