@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { uploadAvatar } from "@/lib/account";
+// import { uploadAvatar } from "@/lib/account";
 
 export default function AccountSidebar() {
   const [avatar, setAvatar] = useState(
