@@ -4,7 +4,7 @@ import AccountSidebar from "@/components/Account/AccountSidebar";
 export default function OrdersPage() {
   return (
     <main className="main spc-hd spc-hd-2">
-      <AccountBreadcrumb />
+      {/* <AccountBreadcrumb /> */}
 
       <section className="info-acount">
         <div className="container">
